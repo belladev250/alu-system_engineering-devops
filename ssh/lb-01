@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-#comment
-ssh -i ~/.ssh/school ubuntu@54.144.117.215
