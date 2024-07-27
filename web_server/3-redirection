@@ -4,9 +4,10 @@
 sudo apt-get update
 sudo apt-get -y install nginx
 sudo ufw allow 'Nginx HTTP'
-echo "This is Elissa from Holberton School :)" | sudo tee /var/www/html/index.html > /dev/null
+echo "This is Melissa from Holberton School :)" | sudo tee /var/www/html/index.html > /dev/null
 
-string_for_replacement="server_name _;\n\trewrite ^\/redirect_me https:\/\/www.github.com\/twizelissa permanent;"
+string_for_replacement="server_name _;\n\trewrite ^\/redirect_me https:\/\/www.github.com\/belladev250
+ permanent;"
 sudo sed -i "s/server_name _;/$string_for_replacement/" /etc/nginx/sites-enabled/default
 
 sudo service nginx restart
